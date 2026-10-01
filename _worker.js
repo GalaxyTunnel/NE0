@@ -6,12 +6,11 @@ import { connect } from "cloudflare:sockets";
 var userID = "";                    // VLESS: UUID (optional if only TROJAN)
 var trojanPass = "";              // TROJAN: password (optional if only VLESS)
 var proxyIP = "cdn-b100.xn--b6gac.eu.org";
-var githubProxyURL = "https://raw.githubusercontent.com/gprox-galaxy/Gproxy-domaip/refs/heads/main/PROXYIP.txt";
+var githubProxyURL = "";
 
 // DoH Providers (4 URLs with failover)
 var dohURLs = [
-    "https://e538jrjizj.cloudflare-gateway.com/dns-query",
-    "https://2mms0p4zud.cloudflare-gateway.com/dns-query",
+    "https://cloudflare-gateway.com/dns-query",
     "https://dns.google/dns-query",
     "https://dns.quad9.net/dns-query"
 ];
